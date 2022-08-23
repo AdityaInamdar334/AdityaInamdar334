@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+  <title>Form And Table</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="myscripts.js"></script>
+  <h1 style="color:#281d46; margin-left: 180px;"> Table</h1>
+  <!--<style>
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.button {
+  margin: 15px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+td, th {
+  border: 2px solid #060430;
+  text-align: left;
+  padding: 8px;
+  margin-top: 100px;
+  border-collapse: collapse;
+}
+
+.table{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+-->
+  <head >
+    <title> My Website </title>
+  </head>
+  <body>
+   <table class="table" >
+     <tr> 
+       <th> Name </th>
+       <th> Age </th>
+       <th> Email </th>
+     </tr>
+     <tr> 
+       <td> Adiya </td>
+       <td> 20 </td>
+       <td> adityainamdar@gmail.com </td>
+     </tr>
+     <tr> 
+       <td> Sourabh </td>
+       <td> 20 </td>
+       <td> sourabhk@gmail.com </td>
+     </tr>
+     <tr>
+      <td> Prithviraj</td>
+      <td> 31</td>
+      <td> prithvirajp@gmail.com</td>
+     </tr>
+     <tr>
+      <td> Aditya P</td>
+      <td> 20</td>
+      <td> adityapendse@gmail.com</td>
+     </tr>
+  </table>
+
+  <h1 style="margin-left: 180px;"> MIT FORM </h1>
+  <form class="table">
+   <br>
+   <label for="fname"> First name: </label>
+   <input type="text" id="fname"  name="fname"> 
+   <br>
+   <br>
+   <label for="lname"> Last name: </label>
+   <input type="text" id="lname"  name="lname">
+   <div>
+     <br>
+     <label> Gender </label>
+     <select name="gender">
+     <option value="male">Male</option>
+     <option value="female">Female</option>
+     <option value="other">Other</option>
+   </div>
+   <br>
+   
+   <div>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"> 
+  </div>
+  <br>
+  <br>
+  <div>
+    <p><strong> You like reading or coding</strong></p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I like coding</label><br>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="none">
+<label for="vehicle1"> I like reading</label><br>
+  </div>
+  <br>
+  <p><strong>Choose your favorite Web language:</strong></p>
+  <div>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <label for="faculty">Choose your faculty from the list:</label>
+  <input list="faculties" name="faculty" id="faculty">
+
+<datalist id="faculties">
+  <option value="Engineering">
+  <option value="Polytechnic">
+  <option value="Farmacy">
+  <option value="Buisness">
+  <option value="Masters">
+</datalist>
+  </div>
+  <button class="button" style="padding: 15px; margin-left: 50%;" >Submit</button>
+  </form>
+ </body>
+</html>
