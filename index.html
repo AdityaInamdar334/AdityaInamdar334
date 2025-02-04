@@ -1,149 +1,164 @@
-<!DOCTYPE HTML>
-<html>
-  <title>Form And Table</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="myscripts.js"></script>
-  <h1 style="color:#281d46; margin-left: 180px;"> Table</h1>
-  <!--<style>
-    table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Inamdar - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
 
-.button {
-  margin: 15px;
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-.button:hover {background-color: #3e8e41}
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
 
-td, th {
-  border: 2px solid #060430;
-  text-align: left;
-  padding: 8px;
-  margin-top: 100px;
-  border-collapse: collapse;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
 
-.table{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-}
+        .contact-links a {
+            display: block;
+            margin: 10px 0;
+            color: #3498db;
+            text-decoration: none;
+        }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
 
-</style>
--->
-  <head >
-    <title> My Website </title>
-  </head>
-  <body>
-   <table class="table" >
-     <tr> 
-       <th> Name </th>
-       <th> Age </th>
-       <th> Email </th>
-     </tr>
-     <tr> 
-       <td> Adiya </td>
-       <td> 20 </td>
-       <td> adityainamdar@gmail.com </td>
-     </tr>
-     <tr> 
-       <td> Sourabh </td>
-       <td> 20 </td>
-       <td> sourabhk@gmail.com </td>
-     </tr>
-     <tr>
-      <td> Prithviraj</td>
-      <td> 31</td>
-      <td> prithvirajp@gmail.com</td>
-     </tr>
-     <tr>
-      <td> Aditya P</td>
-      <td> 20</td>
-      <td> adityapendse@gmail.com</td>
-     </tr>
-  </table>
+        .certification {
+            margin: 15px 0;
+            padding-left: 20px;
+            border-left: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Aditya Inamdar</h1>
+        <p>📧 inamdara@students.felician.edu | 📱 862-238-0508</p>
+    </div>
 
-  <h1 style="margin-left: 180px;"> MIT FORM </h1>
-  <form class="table">
-   <br>
-   <label for="fname"> First name: </label>
-   <input type="text" id="fname"  name="fname"> 
-   <br>
-   <br>
-   <label for="lname"> Last name: </label>
-   <input type="text" id="lname"  name="lname">
-   <div>
-     <br>
-     <label> Gender </label>
-     <select name="gender">
-     <option value="male">Male</option>
-     <option value="female">Female</option>
-     <option value="other">Other</option>
-   </div>
-   <br>
-   
-   <div>
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday"> 
-  </div>
-  <br>
-  <br>
-  <div>
-    <p><strong> You like reading or coding</strong></p>
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1"> I like coding</label><br>
-<input type="checkbox" id="vehicle1" name="vehicle1" value="none">
-<label for="vehicle1"> I like reading</label><br>
-  </div>
-  <br>
-  <p><strong>Choose your favorite Web language:</strong></p>
-  <div>
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-    <label for="javascript">JavaScript</label>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div>
-    <label for="faculty">Choose your faculty from the list:</label>
-  <input list="faculties" name="faculty" id="faculty">
+    <div class="section">
+        <h2>Education</h2>
+        <div class="grid">
+            <div>
+                <h3>Felician University</h3>
+                <p>M.S. Computer Science<br>
+                GPA: 4.0/4.0<br>
+                Expected Spring 2025</p>
+            </div>
+            <div>
+                <h3>MIT Pune</h3>
+                <p>B.Tech Computer Science<br>
+                GPA: 3.98/4.0</p>
+            </div>
+        </div>
+    </div>
 
-<datalist id="faculties">
-  <option value="Engineering">
-  <option value="Polytechnic">
-  <option value="Farmacy">
-  <option value="Buisness">
-  <option value="Masters">
-</datalist>
-  </div>
-  <button class="button" style="padding: 15px; margin-left: 50%;" >Submit</button>
-  </form>
- </body>
+    <div class="section">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Felician University - Graduate Assistant</h3>
+            <ul>
+                <li>Resolved 95% of 200+ IT service requests</li>
+                <li>Managed 50+ classroom device updates</li>
+                <li>Implemented Azure/IoT infrastructure solutions</li>
+            </ul>
+
+            <h3>Google Summer of Code - Contributor</h3>
+            <ul>
+                <li>Developed bone cancer detection algorithm documentation</li>
+                <li>Coordinated software product evaluations</li>
+            </ul>
+
+            <h3>Home Automation Business - Owner</h3>
+            <ul>
+                <li>Designed water level detection system</li>
+                <li>Generated 30% revenue growth through 50+ client acquisitions</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div>
+                <h3>Ananta OS Kernel</h3>
+                <p>Developed operating system kernel using C/C++ and Assembly</p>
+            </div>
+            <div>
+                <h3>SevaYog NGO</h3>
+                <p>Planted 9,000+ trees through environmental initiatives</p>
+            </div>
+            <div>
+                <h3>Cyber Socratic</h3>
+                <p>YouTube channel & podcast on deep learning</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div>
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Technologies</h3>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Cybersecurity</li>
+                    <li>Cloud Computing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <div class="certification">
+            <h3>Python for Everybody - University of Michigan</h3>
+            <h3>Machine Learning Specialization - deeplearning.ai</h3>
+        </div>
+    </div>
+
+    <div class="section contact-links">
+        <h2>Contact & Media</h2>
+        <a href="https://github.com/AdityaInamdar334">GitHub</a>
+        <a href="https://www.linkedin.com/in/adityainamdar1/">LinkedIn</a>
+        <a href="https://www.youtube.com/@cybersocratic">YouTube</a>
+        <a href="https://medium.com/@inamdaraditya98">Medium Blog</a>
+        <a href="https://sevayog.org">SevaYog NGO</a>
+    </div>
+</body>
 </html>
