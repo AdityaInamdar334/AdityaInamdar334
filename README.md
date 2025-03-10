@@ -1,6 +1,6 @@
-# Hi 👋, I'm Aditya Inamdar
+# Hi, I'm Aditya Inamdar
 
-🚀 **Tech Enthusiast | AI & Machine Learning | Open Source Contributor**
+ **Tech Enthusiast | AI & Machine Learning | Open Source Contributor**
 
 > *"A jack of all trades is a master of none, but oftentimes better than a master of one."*
 
