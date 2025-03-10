@@ -25,7 +25,7 @@
 
 #### 🏠 **Home Automation System**  
 - **Developed an IoT-based smart home system for real-time monitoring.**  
-- 🔗 (Repository link if available)
+- 🔗 [Github Repository](https://github.com/AdityaInamdar334/HOME-AUTOMATION)
 
 ---
 
