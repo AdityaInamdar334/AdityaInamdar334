@@ -10,7 +10,7 @@
 - 📝 I write about AI & Tech on [Medium](https://medium.com/@inamdaraditya98)
 - 🎥 I create **Deep Learning & AI content** on [YouTube: Cyber Socratic](https://www.youtube.com/@cybersocratic)
 - 📫 Reach me at **adityainamdar74@gmail.com**
-- 📄 My portfolio: [adityainamdar.tiiny.site](https://adityainamdar.tiiny.site)
+
 
 ---
 
