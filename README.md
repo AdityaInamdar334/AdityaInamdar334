@@ -1,6 +1,6 @@
 # Hi, I'm Aditya Inamdar
 
- **Tech Enthusiast | AI & Machine Learning | Open Source Contributor**
+**Tech Enthusiast | AI & Machine Learning | Open Source Contributor**
 
 > *"A jack of all trades is a master of none, but oftentimes better than a master of one."*
 
@@ -10,7 +10,6 @@
 - 📝 I write about AI & Tech on [Medium](https://medium.com/@inamdaraditya98)
 - 🎥 I create **Deep Learning & AI content** on [YouTube: Cyber Socratic](https://www.youtube.com/@cybersocratic)
 - 📫 Reach me at **adityainamdar74@gmail.com**
-
 
 ---
 
@@ -25,16 +24,32 @@
 
 #### 🏠 **Home Automation System**  
 - **Developed an IoT-based smart home system for real-time monitoring.**  
-- 🔗 [Github Repository](https://github.com/AdityaInamdar334/HOME-AUTOMATION)
+- 🔗 [GitHub Repository](https://github.com/AdityaInamdar334/HOME-AUTOMATION)
+
+#### 📊 **Shallow Neural Network with MNIST**  
+- **Implemented a shallow neural network to classify MNIST digits.**
+- 🔗 [GitHub Repository](https://github.com/AdityaInamdar334/shallow-net-with-mnist)
+
+#### 📈 **Planner Data Simplification**  
+- **Simplified high-dimensional planner data using ML techniques.**
+- 🔗 [GitHub Repository](https://github.com/AdityaInamdar334/Plannar-data-simplification)
+
+#### 🚗 **Autonomous Driving with CARLA and DQN**  
+- **Trained a deep Q-network for autonomous driving in the CARLA simulator.**
+- 🔗 [GitHub Repository](https://github.com/AdityaInamdar334/carla-dqn-autonomous-driving)
+
+#### 💳 **Customer Transaction Fraud Detection**  
+- **Built a fraud detection system using Random Forests for transaction data.**
+- 🔗 [GitHub Repository](https://github.com/AdityaInamdar334/Customer-Transaction-Fraud-Detection-using-Random-Forest)
 
 ---
 
 ### 🔹 **Connect with Me**
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityainamdar1)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AdityaInamdar334)
-[![Medium](https://img.shields.io/badge/-Medium-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@inamdaraditya98)
-[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://www.leetcode.com/adityainamdar74)
-[![YouTube](https://img.shields.io/badge/-YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@cybersocratic)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityainamdar1)  
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AdityaInamdar334)  
+[![Medium](https://img.shields.io/badge/-Medium-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@inamdaraditya98)  
+[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://www.leetcode.com/adityainamdar74)  
+[![YouTube](https://img.shields.io/badge/-YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@cybersocratic)  
 
 ---
 
