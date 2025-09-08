@@ -1,0 +1,106 @@
+{
+  "name": "Aditya Inamdar",
+  "tagline": "Tech Enthusiast | AI & Machine Learning | Open Source Contributor",
+  "email": "adityainamdar74@gmail.com",
+  "phone": "862-238-0508",
+  "about": {
+    "quote": "A jack of all trades is a master of none, but oftentimes better than a master of one.",
+    "bio": "I write about AI & Tech on <a href='https://medium.com/@inamdaraditya98' target='_blank'>Medium</a> and create Deep Learning & AI content on my <a href='https://www.youtube.com/@cybersocratic' target='_blank'>YouTube channel: Cyber Socratic</a>."
+  },
+  "podcasts": {
+    "title": "Cyber Socratic Podcast",
+    "description": "Check out my podcast series on YouTube where I dive deep into AI, Deep Learning, and the latest in tech. Click the link to view the full playlist!",
+    "link": "https://youtube.com/playlist?list=PL_fFj3MQ57a1y4Yn7YTdm1GMHKw6mDaSF&si=PaOx063nvPIN_4QV"
+  },
+  "experience": [
+    {
+      "title": "Felician University - Graduate Assistant",
+      "points": [
+        "Resolved 95% of 200+ IT service requests",
+        "Managed 50+ classroom device updates",
+        "Implemented Azure/IoT infrastructure solutions"
+      ]
+    },
+    {
+      "title": "Google Summer of Code - Contributor",
+      "points": [
+        "Developed bone cancer detection algorithm documentation",
+        "Coordinated software product evaluations"
+      ]
+    },
+    {
+      "title": "Home Automation Business - Owner",
+      "points": [
+        "Designed water level detection system",
+        "Generated 30% revenue growth through 50+ client acquisitions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Felician University",
+      "details": "M.S. Computer Science | GPA: 4.0/4.0 | Expected Spring 2026"
+    },
+    {
+      "institution": "MIT Pune",
+      "details": "B.Tech Computer Science | GPA: 3.98/4.0"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Breast Cancer Detection",
+      "description": "Built a logistic regression model achieving 99% accuracy.",
+      "link": "https://github.com/AdityaInamdar334/breast-cancer-logistic-regression"
+    },
+    {
+      "title": "GPT from Scratch",
+      "description": "Developed a transformer-based language model, inspired by Andrej Karpathy.",
+      "link": "https://github.com/AdityaInamdar334/gpt-from-scratch"
+    },
+    {
+      "title": "Home Automation System",
+      "description": "Developed an IoT-based smart home system for real-time monitoring.",
+      "link": "https://github.com/AdityaInamdar334/HOME-AUTOMATION"
+    },
+    {
+      "title": "Shallow Neural Network with MNIST",
+      "description": "Implemented a shallow neural network to classify MNIST digits.",
+      "link": "https://github.com/AdityaInamdar334/shallow-net-with-mnist"
+    },
+    {
+      "title": "Planner Data Simplification",
+      "description": "Simplified high-dimensional planner data using ML techniques.",
+      "link": "https://github.com/AdityaInamdar334/Plannar-data-simplification"
+    },
+    {
+      "title": "Autonomous Driving with CARLA and DQN",
+      "description": "Trained a deep Q-network for autonomous driving in the CARLA simulator.",
+      "link": "https://github.com/AdityaInamdar334/carla-dqn-autonomous-driving"
+    },
+    {
+      "title": "Customer Transaction Fraud Detection",
+      "description": "Built a fraud detection system using Random Forests for transaction data.",
+      "link": "https://github.com/AdityaInamdar334/Customer-Transaction-Fraud-Detection-using-Random-Forest"
+    }
+  ],
+  "skills": [
+    "Python",
+    "C++",
+    "PyTorch",
+    "TensorFlow",
+    "Docker",
+    "Linux"
+  ],
+  "certifications": [
+    "Python for Everybody - University of Michigan",
+    "Machine Learning Specialization - deeplearning.ai"
+  ],
+  "socialLinks": [
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/adityainamdar1" },
+    { "name": "GitHub", "url": "https://github.com/AdityaInamdar334" },
+    { "name": "Medium", "url": "https://medium.com/@inamdaraditya98" },
+    { "name": "LeetCode", "url": "https://www.leetcode.com/adityainamdar74" },
+    { "name": "YouTube", "url": "https://www.youtube.com/@cybersocratic" }
+  ],
+  "funFact": "90% of my code works perfectly... until you actually try to run it! 😆"
+}
