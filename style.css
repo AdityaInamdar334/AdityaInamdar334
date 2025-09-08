@@ -51,6 +51,10 @@ section:last-child {
     border-bottom: none;
 }
 
+#articles {
+    display: none; /* Hidden by default, shown by script.js on success */
+}
+
 h2 {
     color: var(--highlight-color);
     border-bottom: 2px solid var(--highlight-color);
@@ -100,6 +104,14 @@ ul {
 
 .project-card:hover {
     transform: translateY(-5px);
+}
+
+.podcast-card {
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-align: center;
 }
 
 .project-card h3 {
