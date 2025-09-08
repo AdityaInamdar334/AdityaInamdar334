@@ -223,8 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const articles = data.items.slice(0, 3);
                 let articlesHTML = '';
                 articles.forEach(item => {
+                    // Extract image from description using regex
+                    const match = item.description.match(/<img[^>]+src="([^">]+)"/);
+                    const imgSrc = match ? match[1] : 'https://via.placeholder.com/300x200.png?text=No+Image';
+
                     articlesHTML += `
                         <div class="project-card">
+                            <img src="${imgSrc}" alt="${item.title}" class="article-image">
                             <h3>${item.title}</h3>
                             <a href="${item.link}" target="_blank">Read on Medium</a>
                         </div>
@@ -240,6 +245,32 @@ document.addEventListener('DOMContentLoaded', () => {
             articlesSection.style.display = 'none'; // Hide on error
         }
     }
+
+    // --- 5. Theme Switcher ---
+    const themeSwitcher = document.getElementById('theme-switcher');
+    const body = document.body;
+
+    // Check for saved theme preference
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+            themeSwitcher.textContent = '☀️';
+        }
+    }
+
+    themeSwitcher.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        let theme = 'light-mode';
+        if (body.classList.contains('dark-mode')) {
+            theme = 'dark-mode';
+            themeSwitcher.textContent = '☀️';
+        } else {
+            themeSwitcher.textContent = '🌙';
+        }
+        localStorage.setItem('theme', theme);
+    });
+
 
     // --- Initial Load ---
     loadPortfolioData();

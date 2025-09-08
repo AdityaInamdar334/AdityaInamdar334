@@ -1,9 +1,5 @@
 :root {
-    --bg-color: #f0f2f5;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --card-bg-color: #ffffff;
-    --border-color: #dee2e6;
+
     --shadow-color: rgba(0, 0, 0, 0.1);
     --font-family: 'Space Grotesk', sans-serif;
 }
@@ -13,8 +9,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+
 }
 
 .container {
@@ -25,75 +20,31 @@ body {
 
 /* Header */
 .header {
-    background-color: var(--card-bg-color);
+
     box-shadow: 0 2px 4px var(--shadow-color);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-}
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--primary-color);
-}
-
-/* Hero Section */
-.hero {
-    background-color: var(--card-bg-color);
-    padding: 60px 0;
-    text-align: center;
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
-}
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: var(--text-color);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: var(--primary-color);
-}
 
 /* General Section Styling */
 section {
@@ -113,17 +64,7 @@ h2 {
     text-align: center;
     border: none;
     margin-bottom: 20px;
-}
 
-#about #bio {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Experience Section */
-#experience-container .job {
-    background-color: var(--card-bg-color);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -131,10 +72,6 @@ h2 {
     border-left: 5px solid var(--primary-color);
 }
 
-#experience-container h3 {
-    margin-top: 0;
-    color: var(--primary-color);
-}
 
 /* Project Grid */
 .project-grid {
@@ -144,12 +81,13 @@ h2 {
 }
 
 .project-card, .podcast-card {
-    background-color: var(--card-bg-color);
+
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .project-card:hover, .podcast-card:hover {
     transform: translateY(-5px);
@@ -159,13 +97,7 @@ h2 {
 .project-card h3 {
     margin-top: 0;
     color: var(--primary-color);
-}
 
-.project-card a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-}
 
 /* Skills */
 .skills-flex {
@@ -187,9 +119,6 @@ h2 {
 footer {
     text-align: center;
     padding: 40px 0;
-    background-color: var(--card-bg-color);
-    margin-top: 40px;
-}
 
 .fun-fact {
     font-style: italic;
@@ -220,12 +149,17 @@ footer {
     display: none;
     width: 350px;
     height: 500px;
-    background-color: var(--card-bg-color);
+
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--shadow-color);
     flex-direction: column;
     overflow: hidden;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-light);
+}
+
+body.dark-mode #chatbot-window {
+    background-color: var(--card-bg-color-dark);
+    border-color: var(--border-color-dark);
 }
 
 #chatbot-header {
@@ -254,20 +188,11 @@ footer {
 
 .bot-message {
     background-color: #e9ecef;
-    color: var(--text-color);
-}
 
-#chatbot-input-container {
-    border-top: 1px solid var(--border-color);
-}
-
-#chatbot-input {
-    border: 1px solid var(--border-color);
-    background-color: white;
-    color: var(--text-color);
 }
 
 #chatbot-send {
     background-color: var(--primary-color);
     color: white;
+
 }
