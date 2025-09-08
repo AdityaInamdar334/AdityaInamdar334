@@ -1,15 +1,5 @@
 :root {
-    --bg-color-light: #f0f2f5;
-    --text-color-light: #333;
-    --card-bg-color-light: #ffffff;
-    --border-color-light: #dee2e6;
 
-    --bg-color-dark: #0a192f;
-    --text-color-dark: #ccd6f6;
-    --card-bg-color-dark: #112240;
-    --border-color-dark: #233554;
-
-    --primary-color: #007bff;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --font-family: 'Space Grotesk', sans-serif;
 }
@@ -19,14 +9,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color-light);
-    color: var(--text-color-light);
-    transition: background-color 0.3s, color 0.3s;
-}
 
-body.dark-mode {
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
 }
 
 .container {
@@ -37,92 +20,31 @@ body.dark-mode {
 
 /* Header */
 .header {
-    background-color: var(--card-bg-color-light);
+
     box-shadow: 0 2px 4px var(--shadow-color);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-body.dark-mode .header {
-    background-color: var(--card-bg-color-dark);
-    border-bottom: 1px solid var(--border-color-dark);
-}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-}
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color-light);
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-body.dark-mode .nav-links a {
-    color: var(--text-color-dark);
-}
-
-.nav-links a:hover {
-    color: var(--primary-color);
-}
-
-/* Hero Section */
-.hero {
-    background-color: var(--card-bg-color-light);
-    padding: 60px 0;
-    text-align: center;
-}
-
-body.dark-mode .hero {
-    background-color: var(--card-bg-color-dark);
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
-}
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: var(--text-color-light);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
-body.dark-mode .social-links a {
-    color: var(--text-color-dark);
-}
-
-.social-links a:hover {
-    color: var(--primary-color);
-}
 
 /* General Section Styling */
 section {
@@ -142,17 +64,7 @@ h2 {
     text-align: center;
     border: none;
     margin-bottom: 20px;
-}
 
-#about #bio {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Experience Section */
-#experience-container .job {
-    background-color: var(--card-bg-color-light);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -160,15 +72,6 @@ h2 {
     border-left: 5px solid var(--primary-color);
 }
 
-body.dark-mode #experience-container .job {
-    background-color: var(--card-bg-color-dark);
-    border-color: var(--primary-color);
-}
-
-#experience-container h3 {
-    margin-top: 0;
-    color: var(--primary-color);
-}
 
 /* Project Grid */
 .project-grid {
@@ -178,16 +81,13 @@ body.dark-mode #experience-container .job {
 }
 
 .project-card, .podcast-card {
-    background-color: var(--card-bg-color-light);
+
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-body.dark-mode .project-card, body.dark-mode .podcast-card {
-    background-color: var(--card-bg-color-dark);
-}
 
 .project-card:hover, .podcast-card:hover {
     transform: translateY(-5px);
@@ -197,21 +97,6 @@ body.dark-mode .project-card, body.dark-mode .podcast-card {
 .project-card h3 {
     margin-top: 0;
     color: var(--primary-color);
-}
-
-.project-card a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.article-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
-}
 
 
 /* Skills */
@@ -234,13 +119,6 @@ body.dark-mode .project-card, body.dark-mode .podcast-card {
 footer {
     text-align: center;
     padding: 40px 0;
-    background-color: var(--card-bg-color-light);
-    margin-top: 40px;
-}
-
-body.dark-mode footer {
-    background-color: var(--card-bg-color-dark);
-}
 
 .fun-fact {
     font-style: italic;
@@ -271,7 +149,7 @@ body.dark-mode footer {
     display: none;
     width: 350px;
     height: 500px;
-    background-color: var(--card-bg-color-light);
+
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--shadow-color);
     flex-direction: column;
@@ -310,55 +188,11 @@ body.dark-mode #chatbot-window {
 
 .bot-message {
     background-color: #e9ecef;
-    color: #333;
-}
 
-body.dark-mode .bot-message {
-    background-color: #2a3a52;
-    color: var(--text-color-dark);
-}
-
-#chatbot-input-container {
-    border-top: 1px solid var(--border-color-light);
-}
-
-body.dark-mode #chatbot-input-container {
-    border-top: 1px solid var(--border-color-dark);
-}
-
-#chatbot-input {
-    border: 1px solid var(--border-color-light);
-    background-color: white;
-    color: #333;
-    border-radius: 20px;
-    padding: 10px;
-    margin-right: 10px;
-    flex-grow: 1;
-}
-
-body.dark-mode #chatbot-input {
-    background-color: var(--bg-color-dark);
-    border-color: var(--border-color-dark);
-    color: var(--text-color-dark);
-}
-
-#theme-switcher {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text-color-light);
-}
-
-body.dark-mode #theme-switcher {
-    color: var(--text-color-dark);
 }
 
 #chatbot-send {
     background-color: var(--primary-color);
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+
 }
