@@ -5,80 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Inamdar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <h1 id="user-name"></h1>
-            <p id="user-tagline"></p>
-            <p id="user-contact"></p>
+            <nav class="navbar">
+                <a href="#" class="logo">Aditya Inamdar</a>
+                <ul class="nav-links">
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-switcher" title="Toggle theme">🌙</button>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <blockquote id="quote"></blockquote>
-            <p id="bio"></p>
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="user-name"></h1>
+                    <p id="user-tagline"></p>
+                    <p id="user-contact"></p>
+                    <div id="social-links-container" class="social-links">
+                        <!-- Social links will be loaded here -->
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="podcasts">
-            <h2>Podcasts</h2>
-            <div id="podcast-card" class="podcast-card">
-                <!-- Podcast info will be loaded here -->
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <blockquote id="quote"></blockquote>
+                <p id="bio"></p>
             </div>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
-            <div id="experience-container">
-                <!-- Experience will be loaded here -->
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div id="education-container">
-                <!-- Education will be loaded here -->
+            <div class="container">
+                <h2>Experience</h2>
+                <div id="experience-container">
+                    <!-- Experience will be loaded here -->
+                </div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>My Projects</h2>
-            <div id="projects-grid" class="project-grid">
-                <!-- Projects will be loaded here -->
+            <div class="container">
+                <h2>My Projects</h2>
+                <div id="projects-grid" class="project-grid">
+                    <!-- Projects will be loaded here -->
+                </div>
             </div>
         </section>
 
         <section id="articles">
-            <h2>Latest Articles</h2>
-            <div id="articles-grid" class="project-grid">
-                <!-- Articles will be loaded here by script.js -->
+            <div class="container">
+                <h2>Latest Articles</h2>
+                <div id="articles-grid" class="project-grid">
+                    <!-- Articles will be loaded here by script.js -->
+                </div>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Languages & Tools</h2>
-            <div id="skills-container" class="skills-flex">
-                <!-- Skills will be loaded here -->
+            <div class="container">
+                <h2>Languages & Tools</h2>
+                <div id="skills-container" class="skills-flex">
+                    <!-- Skills will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <div id="education-container">
+                    <!-- Education will be loaded here -->
+                </div>
             </div>
         </section>
 
         <section id="certifications">
-            <h2>Certifications</h2>
-            <div id="certifications-container">
-                <!-- Certifications will be loaded here -->
+            <div class="container">
+                <h2>Certifications</h2>
+                <div id="certifications-container">
+                    <!-- Certifications will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="podcasts">
+            <div class="container">
+                <h2>Podcasts</h2>
+                <div id="podcast-card" class="podcast-card">
+                    <!-- Podcast info will be loaded here -->
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <div class="container">
-            <h2>Connect with Me</h2>
-            <div id="social-links-container" class="social-links">
-                <!-- Social links will be loaded here -->
-            </div>
             <p id="fun-fact" class="fun-fact"></p>
+            <p>&copy; 2024 Aditya Inamdar. All rights reserved.</p>
         </div>
     </footer>
 

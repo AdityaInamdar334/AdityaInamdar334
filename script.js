@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderHeader() {
         document.getElementById('user-name').textContent = portfolioData.name;
         document.getElementById('user-tagline').textContent = portfolioData.tagline;
-        document.getElementById('user-contact').innerHTML = `📧 ${portfolioData.email} | 📱 ${portfolioData.phone}`;
+        document.getElementById('user-contact').innerHTML = `📧 <a href="mailto:${portfolioData.email}">${portfolioData.email}</a> | 📱 ${portfolioData.phone}`;
+        const socialLinksContainer = document.getElementById('social-links-container');
+        socialLinksContainer.innerHTML = portfolioData.socialLinks.map(link => `<a href="${link.url}" target="_blank">${link.name}</a>`).join('');
     }
 
     function renderAbout() {
@@ -107,8 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderFooter() {
-        const container = document.getElementById('social-links-container');
-        container.innerHTML = portfolioData.socialLinks.map(link => `<a href="${link.url}" target="_blank">${link.name}</a>`).join('');
         document.getElementById('fun-fact').textContent = portfolioData.funFact;
     }
 
@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 3. Chatbot Logic (Now Initialized After Data Load) ---
     function initializeChatbot() {
         const chatbotIcon = document.getElementById('chatbot-icon');
+        chatbotIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="36px" height="36px"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>`;
         const chatbotWindow = document.getElementById('chatbot-window');
         const chatbotClose = document.getElementById('chatbot-close');
         const chatbotSend = document.getElementById('chatbot-send');
@@ -222,8 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const articles = data.items.slice(0, 3);
                 let articlesHTML = '';
                 articles.forEach(item => {
+                    // Extract image from description using regex
+                    const match = item.description.match(/<img[^>]+src="([^">]+)"/);
+                    const imgSrc = match ? match[1] : 'https://via.placeholder.com/300x200.png?text=No+Image';
+
                     articlesHTML += `
                         <div class="project-card">
+                            <img src="${imgSrc}" alt="${item.title}" class="article-image">
                             <h3>${item.title}</h3>
                             <a href="${item.link}" target="_blank">Read on Medium</a>
                         </div>
@@ -239,6 +245,32 @@ document.addEventListener('DOMContentLoaded', () => {
             articlesSection.style.display = 'none'; // Hide on error
         }
     }
+
+    // --- 5. Theme Switcher ---
+    const themeSwitcher = document.getElementById('theme-switcher');
+    const body = document.body;
+
+    // Check for saved theme preference
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+            themeSwitcher.textContent = '☀️';
+        }
+    }
+
+    themeSwitcher.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        let theme = 'light-mode';
+        if (body.classList.contains('dark-mode')) {
+            theme = 'dark-mode';
+            themeSwitcher.textContent = '☀️';
+        } else {
+            themeSwitcher.textContent = '🌙';
+        }
+        localStorage.setItem('theme', theme);
+    });
+
 
     // --- Initial Load ---
     loadPortfolioData();
