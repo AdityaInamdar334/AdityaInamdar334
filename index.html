@@ -3,162 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Inamdar - Resume</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .section {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .contact-links a {
-            display: block;
-            margin: 10px 0;
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
-
-        .certification {
-            margin: 15px 0;
-            padding-left: 20px;
-            border-left: 3px solid #3498db;
-        }
-    </style>
+    <title>Aditya Inamdar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Aditya Inamdar</h1>
-        <p>📧 inamdara@students.felician.edu | 📱 862-238-0508</p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Aditya Inamdar</h1>
+            <p>Tech Enthusiast | AI & Machine Learning | Open Source Contributor</p>
+            <p>📧 adityainamdar74@gmail.com | 📱 862-238-0508</p>
+        </div>
+    </header>
 
-    <div class="section">
-        <h2>Education</h2>
-        <div class="grid">
-            <div>
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <blockquote>"A jack of all trades is a master of none, but oftentimes better than a master of one."</blockquote>
+            <p>I write about AI & Tech on <a href="https://medium.com/@inamdaraditya98" target="_blank">Medium</a> and create Deep Learning & AI content on my <a href="https://www.youtube.com/@cybersocratic" target="_blank">YouTube channel: Cyber Socratic</a>.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Felician University - Graduate Assistant</h3>
+                <ul>
+                    <li>Resolved 95% of 200+ IT service requests</li>
+                    <li>Managed 50+ classroom device updates</li>
+                    <li>Implemented Azure/IoT infrastructure solutions</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Google Summer of Code - Contributor</h3>
+                <ul>
+                    <li>Developed bone cancer detection algorithm documentation</li>
+                    <li>Coordinated software product evaluations</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Home Automation Business - Owner</h3>
+                <ul>
+                    <li>Designed water level detection system</li>
+                    <li>Generated 30% revenue growth through 50+ client acquisitions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
                 <h3>Felician University</h3>
-                <p>M.S. Computer Science<br>
-                GPA: 4.0/4.0<br>
-                Expected Spring 2026</p>
+                <p>M.S. Computer Science | GPA: 4.0/4.0 | Expected Spring 2026</p>
             </div>
-            <div>
+            <div class="education-item">
                 <h3>MIT Pune</h3>
-                <p>B.Tech Computer Science<br>
-                GPA: 3.98/4.0</p>
+                <p>B.Tech Computer Science | GPA: 3.98/4.0</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Breast Cancer Detection</h3>
+                    <p>Built a logistic regression model achieving 99% accuracy.</p>
+                    <a href="https://github.com/AdityaInamdar334/breast-cancer-logistic-regression" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>GPT from Scratch</h3>
+                    <p>Developed a transformer-based language model, inspired by Andrej Karpathy.</p>
+                    <a href="https://github.com/AdityaInamdar334/gpt-from-scratch" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Home Automation System</h3>
+                    <p>Developed an IoT-based smart home system for real-time monitoring.</p>
+                    <a href="https://github.com/AdityaInamdar334/HOME-AUTOMATION" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Shallow Neural Network with MNIST</h3>
+                    <p>Implemented a shallow neural network to classify MNIST digits.</p>
+                    <a href="https://github.com/AdityaInamdar334/shallow-net-with-mnist" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Planner Data Simplification</h3>
+                    <p>Simplified high-dimensional planner data using ML techniques.</p>
+                    <a href="https://github.com/AdityaInamdar334/Plannar-data-simplification" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Autonomous Driving with CARLA and DQN</h3>
+                    <p>Trained a deep Q-network for autonomous driving in the CARLA simulator.</p>
+                    <a href="https://github.com/AdityaInamdar334/carla-dqn-autonomous-driving" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Customer Transaction Fraud Detection</h3>
+                    <p>Built a fraud detection system using Random Forests for transaction data.</p>
+                    <a href="https://github.com/AdityaInamdar334/Customer-Transaction-Fraud-Detection-using-Random-Forest" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Languages & Tools</h2>
+            <div class="skills-flex">
+                <span>Python</span>
+                <span>C++</span>
+                <span>PyTorch</span>
+                <span>TensorFlow</span>
+                <span>Docker</span>
+                <span>Linux</span>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p>Python for Everybody - University of Michigan</p>
+            <p>Machine Learning Specialization - deeplearning.ai</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Connect with Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/adityainamdar1" target="_blank">LinkedIn</a>
+                <a href="https://github.com/AdityaInamdar334" target="_blank">GitHub</a>
+                <a href="https://medium.com/@inamdaraditya98" target="_blank">Medium</a>
+                <a href="https://www.leetcode.com/adityainamdar74" target="_blank">LeetCode</a>
+                <a href="https://www.youtube.com/@cybersocratic" target="_blank">YouTube</a>
+            </div>
+            <p class="fun-fact">Fun Fact: "90% of my code works perfectly... until you actually try to run it!" 😆</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot placeholder -->
+    <div id="chatbot-container">
+        <div id="chatbot-icon"></div>
+        <div id="chatbot-window">
+            <div id="chatbot-header">
+                <p>Resume Bot</p>
+                <button id="chatbot-close">&times;</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask about my resume...">
+                <button id="chatbot-send">Send</button>
             </div>
         </div>
     </div>
 
-    <div class="section">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Felician University - Graduate Assistant</h3>
-            <ul>
-                <li>Resolved 95% of 200+ IT service requests</li>
-                <li>Managed 50+ classroom device updates</li>
-                <li>Implemented Azure/IoT infrastructure solutions</li>
-            </ul>
-
-            <h3>Google Summer of Code - Contributor</h3>
-            <ul>
-                <li>Developed bone cancer detection algorithm documentation</li>
-                <li>Coordinated software product evaluations</li>
-            </ul>
-
-            <h3>Home Automation Business - Owner</h3>
-            <ul>
-                <li>Designed water level detection system</li>
-                <li>Generated 30% revenue growth through 50+ client acquisitions</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <div class="grid">
-            <div>
-                <h3>Ananta OS Kernel</h3>
-                <p>Developed operating system kernel using C/C++ and Assembly</p>
-            </div>
-            <div>
-                <h3>SevaYog NGO</h3>
-                <p>Planted 9,000+ trees through environmental initiatives</p>
-            </div>
-            <div>
-                <h3>Cyber Socratic</h3>
-                <p>YouTube channel & podcast on deep learning</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Skills</h2>
-        <div class="grid">
-            <div>
-                <h3>Programming</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>C/C++</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Technologies</h3>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Cybersecurity</li>
-                    <li>Cloud Computing</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Certifications</h2>
-        <div class="certification">
-            <h3>Python for Everybody - University of Michigan</h3>
-            <h3>Machine Learning Specialization - deeplearning.ai</h3>
-        </div>
-    </div>
-
-    <div class="section contact-links">
-        <h2>Contact & Media</h2>
-        <a href="https://github.com/AdityaInamdar334">GitHub</a>
-        <a href="https://www.linkedin.com/in/adityainamdar1/">LinkedIn</a>
-        <a href="https://www.youtube.com/@cybersocratic">YouTube</a>
-        <a href="https://medium.com/@inamdaraditya98">Medium Blog</a>
-        <a href="https://sevayog.org">SevaYog NGO</a>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
