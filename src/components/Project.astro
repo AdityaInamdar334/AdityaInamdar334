@@ -1,0 +1,17 @@
+---
+const { title, desc, tech, link, imgSrc } = Astro.props;
+---
+
+<div class="single-item">
+    {imgSrc && <img src={imgSrc} alt={title} class="article-image" />}
+  <h3><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></h3>
+  <div class="project-desc project-desc-list w-richtext">
+    <ul role="list">
+      {desc.map(item => <li>{item}</li>)}
+    </ul>
+  </div>
+  <div class="mini-label-white">Technologies &amp; tools</div>
+  <div class="chips-container">
+    {tech.map(techItem => <div class="single-chip">{techItem}</div>)}
+  </div>
+</div>

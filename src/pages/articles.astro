@@ -1,0 +1,58 @@
+---
+import Header from '../components/Header.astro';
+import Project from '../components/Project.astro';
+import Sidebar from '../components/Sidebar.astro';
+import portfolioData from '../../data.json';
+
+const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40inamdaraditya98';
+const res = await fetch(rssUrl);
+const data = await res.json();
+const articles = data.items.map(item => {
+    const match = item.description.match(/<img[^>]+src="([^">]+)"/);
+    const imgSrc = match ? match[1] : 'https://via.placeholder.com/300x200.png?text=No+Image';
+    return {
+        title: item.title,
+        desc: [item.description.replace(/<[^>]*>?/gm, '').substring(0, 100) + '...'],
+        tech: item.categories,
+        link: item.link,
+        imgSrc: imgSrc
+    }
+});
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Articles | {portfolioData.name}" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="articles" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Latest Articles</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {articles.map(article => (
+                      <Project
+                        title={article.title}
+                        desc={article.desc}
+                        tech={article.tech}
+                        link={article.link}
+                        imgSrc={article.imgSrc}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

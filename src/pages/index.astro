@@ -1,0 +1,65 @@
+---
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+import portfolioData from "../../data.json";
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <Header title={portfolioData.name} />
+  </head>
+  <body>
+    <div class="content">
+      <Sidebar selectedItem="home" />
+      <nav class="main">
+        <div class="container">
+          <main class="fold-content-container">
+            <div class="fold-content">
+              <h1>Hi, I'm {portfolioData.name.split(' ')[0]}.<br />I build things for the web.</h1>
+              <p class="lead">
+                {portfolioData.tagline}
+              </p>
+            </div>
+            <a href={`mailto:${portfolioData.email}`} class="button w-button">Contact</a>
+          </main>
+          <div class="projects-section">
+            <!-- Skills -->
+            <div class="projects-container">
+              <div class="single-projects-category">
+                <div class="projects-category-image-container">
+                  <img src="/assets/browser.svg" loading="lazy" alt="" class="projects-category-image" />
+                </div>
+              </div>
+              <div class="single-projects-content">
+                <h4>Languages & Tools</h4>
+                <div class="tech-tools-container">
+                  <div class="mini-label-white gray-color">Technologies &amp; tools</div>
+                  <div class="chips-container chips-container-small-width">
+                    {portfolioData.skills.map(skill => (
+                      <div class="single-chip small-chip">{skill}</div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Projects -->
+            <a href="/personal-projects" class="projects-container">
+              <div class="single-projects-category">
+                <div class="projects-category-image-container devops-img">
+                  <img src="/assets/favorite.svg" loading="lazy" alt="" class="projects-category-image" />
+                </div>
+              </div>
+              <div class="single-projects-content">
+                <h4>My Projects</h4>
+                <div class="tech-tools-container">
+                  <div class="mini-label-white gray-color">A selection of my projects</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
