@@ -6,7 +6,13 @@ I build machine learning systems, AI applications, and developer tools across th
 
 I enjoy taking projects from research and experimentation to deployable applications, with a focus on performance, reliability, and user experience.
 
-[LinkedIn](https://linkedin.com/in/adityainamdar1) • [Medium](https://medium.com/@inamdaraditya) • [YouTube](https://youtube.com/@CyberSocratic) • [GitHub](https://github.com/AdityaInamdar334) • [LeetCode](https://leetcode.com/u/AdityaInamdar334/)
+[![Personal Website](https://img.shields.io/badge/Website-adityainamdar.com-000?style=flat&logo=vercel&logoColor=white)](https://adityainamdar.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/adityainamdar1)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@inamdaraditya)
+[![Substack](https://img.shields.io/badge/Substack-FF6719?style=flat&logo=substack&logoColor=white)](https://adityainamdar.substack.com)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://youtube.com/@CyberSocratic)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AdityaInamdar334)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=black)](https://leetcode.com/u/AdityaInamdar334/)
 
 ---
 
@@ -25,8 +31,7 @@ Developed an end-to-end alignment pipeline for fine-tuning LLaMA models using Su
 * DPO alignment workflow
 * Export support for Hugging Face, OpenAI-compatible APIs, and GGUF
 
-**Repository:**
-https://github.com/AdityaInamdar334/llama-mlx-alignment
+**Repository:** [github.com/AdityaInamdar334/llama-mlx-alignment](https://github.com/AdityaInamdar334/llama-mlx-alignment)
 
 ---
 
@@ -43,11 +48,8 @@ Implemented a Dreamer-inspired Recurrent State Space Model (RSSM) trained on pix
 * Stable long-horizon latent rollouts
 * Interactive web-based evaluation dashboard
 
-**Live Demo:**
-https://adityainamdar334.github.io/cheetah-rssm-world-model/
-
-**Repository:**
-https://github.com/AdityaInamdar334/cheetah-rssm-world-model
+**Live Demo:** [adityainamdar334.github.io/cheetah-rssm-world-model](https://adityainamdar334.github.io/cheetah-rssm-world-model/)  
+**Repository:** [github.com/AdityaInamdar334/cheetah-rssm-world-model](https://github.com/AdityaInamdar334/cheetah-rssm-world-model)
 
 ---
 
@@ -64,11 +66,8 @@ Built a retrieval-augmented research assistant capable of answering questions fr
 * Interactive knowledge graph visualization
 * Full-stack deployment using Vercel and Render
 
-**Live Demo:**
-https://nexus-graph-prz0b82qs-adityainamdar334s-projects.vercel.app/
-
-**Repository:**
-https://github.com/AdityaInamdar334/Nexus-Graph-RAG
+**Live Demo:** [nexus-graph-prz0b82qs-adityainamdar334s-projects.vercel.app](https://nexus-graph-prz0b82qs-adityainamdar334s-projects.vercel.app/)  
+**Repository:** [github.com/AdityaInamdar334/Nexus-Graph-RAG](https://github.com/AdityaInamdar334/Nexus-Graph-RAG)
 
 ---
 
@@ -80,13 +79,12 @@ Developed a real-time conversational voice agent supporting bidirectional stream
 
 **Highlights**
 
-* Low-latency voice interactions
+* Low-latency voice interactions (sub‑500ms)
 * Real-time speech-to-text and text-to-speech
 * Tool-calling support
-* Telephone integration through Twilio
+* Telephone integration through Twilio (live demo number: +1 (862) 777-8890)
 
-**Repository:**
-https://github.com/AdityaInamdar334
+**Repository:** [github.com/AdityaInamdar334](https://github.com/AdityaInamdar334)
 
 ---
 
@@ -103,13 +101,9 @@ Implemented GPT-style transformer architectures and sequence-to-sequence transfo
 * GPT-style language model training
 * Neural machine translation experiments
 
-**Repositories:**
-
-GPT From Scratch
-https://github.com/AdityaInamdar334/gpt-from-scratch
-
-Transformer From Scratch
-https://github.com/AdityaInamdar334/transformer-from-scratch
+**Repositories:**  
+[GPT From Scratch](https://github.com/AdityaInamdar334/gpt-from-scratch)  
+[Transformer From Scratch](https://github.com/AdityaInamdar334/transformer-from-scratch)
 
 ---
 
@@ -125,7 +119,7 @@ PyTorch, TensorFlow, MLX, Hugging Face Transformers, LangChain, RAG, LoRA, DPO, 
 
 ### Backend & Infrastructure
 
-FastAPI, Docker, PostgreSQL, Redis, WebSockets, AWS, Google Cloud Platform, Twilio, ChromaDB
+FastAPI, Docker, PostgreSQL, Redis, WebSockets, AWS, Google Cloud Platform, Twilio, ChromaDB, NVIDIA NIM
 
 ### Frontend
 
@@ -133,41 +127,39 @@ React, Next.js, React Native, Tailwind CSS, React Flow
 
 ### Developer Tools
 
-Git, GitHub Actions, Linux, Vercel, Render, Jira
+Git, GitHub Actions, Linux, Vercel, Render, Jira, MPS acceleration
 
 ---
 
-# Writing and Content
+# Writing, Podcasts & Content
 
-### Articles
+### Technical Blog (Medium)
+Deep dives into LLMs, RAG evaluation, graph‑based retrieval, and AI engineering.  
+[medium.com/@inamdaraditya](https://medium.com/@inamdaraditya)
 
-* RAG Evaluation: Measuring Retrieval Quality
-* Building Graph RAG with Llama 3.1 and React Force Graph
-* Additional technical articles available on Medium
+### Newsletter (Substack)
+Research summaries, project walkthroughs, and AI infrastructure insights.  
+[adityainamdar.substack.com](https://adityainamdar.substack.com)
 
-**Medium:**
-https://medium.com/@inamdaraditya
-
-### Videos
-
-Technical content on machine learning, large language models, retrieval systems, and AI engineering.
-
-**YouTube:**
-https://youtube.com/@CyberSocratic
+### YouTube Channel – Cyber Socratic
+Interviews with AI leaders and technical deep‑dives (e.g., PyTorch co‑founder Jeff Smith).  
+[youtube.com/@CyberSocratic](https://youtube.com/@CyberSocratic)
 
 ---
 
 # GitHub Statistics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AdityaInamdar334\&show_icons=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AdityaInamdar334&show_icons=true&theme=radical)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AdityaInamdar334\&layout=compact)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AdityaInamdar334&layout=compact&theme=radical)
 
 ---
 
 # Contact
 
-I am interested in opportunities related to machine learning engineering, AI infrastructure, agentic systems, and full-stack AI development.
+I am interested in opportunities related to machine learning engineering, AI infrastructure, agentic systems, full‑stack AI development, and forward‑deployed engineering.
 
-**Email:** [adityainamdar74@gmail.com](mailto:adityainamdar74@gmail.com)
-**LinkedIn:** https://linkedin.com/in/adityainamdar1
+**Email:** [adityainamdar74@gmail.com](mailto:adityainamdar74@gmail.com)  
+**Portfolio:** [adityainamdar.com](https://adityainamdar.com)  
+**LinkedIn:** [linkedin.com/in/adityainamdar1](https://linkedin.com/in/adityainamdar1)  
+**GitHub:** [github.com/AdityaInamdar334](https://github.com/AdityaInamdar334)
