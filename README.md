@@ -17,6 +17,27 @@ I enjoy taking projects from research and experimentation to deployable applicat
 ---
 
 # Featured Projects
+---
+
+## AI-Powered Medical Image Analysis Assistant
+
+**Technologies:** PyTorch, FastAPI, Streamlit, Docker, LangChain, Grad-CAM, Weights & Biases, OpenAI
+
+Built an end-to-end medical AI platform for multi-label chest X-ray disease classification using the NIH ChestX-ray14 dataset. The project combines deep learning, explainable AI, MLOps, and large language models to deliver production-ready medical image analysis through an interactive web application and REST API.
+
+**Highlights**
+
+* Multi-label classification across 14 thoracic diseases using a fine-tuned ResNet50 model
+* Explainable AI with Grad-CAM heatmaps for transparent model predictions
+* AI-powered radiology report generation using LangChain and OpenAI
+* FastAPI backend with interactive Streamlit frontend
+* Experiment tracking and model versioning using Weights & Biases
+* Dockerized deployment with cloud-hosted live demo
+
+**Live Demo:** https://nih-dataset-image-ml-model-ajsudumesy56vbikf5vwsc.streamlit.app/
+
+**Repository:** https://github.com/AdityaInamdar334/NIH-dataset-image-ml-model
+
 
 ## LLaMA Alignment Pipeline (SFT + DPO) on Apple Silicon
 
