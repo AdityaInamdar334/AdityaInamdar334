@@ -37,7 +37,7 @@ Built an end-to-end medical AI platform for multi-label chest X-ray disease clas
 **Live Demo:** https://nih-dataset-image-ml-model-ajsudumesy56vbikf5vwsc.streamlit.app/
 
 **Repository:** https://github.com/AdityaInamdar334/NIH-dataset-image-ml-model
-
+---
 
 ## LLaMA Alignment Pipeline (SFT + DPO) on Apple Silicon
 
