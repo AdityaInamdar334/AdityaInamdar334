@@ -93,20 +93,30 @@ Built a retrieval-augmented research assistant capable of answering questions fr
 
 ---
 
-## Real-Time Voice AI Agent
+---
 
-**Technologies:** Python, FastAPI, WebSockets, Twilio, Whisper, ElevenLabs
+## Bistro AI Voice Agent
 
-Developed a real-time conversational voice agent supporting bidirectional streaming, tool invocation, interruption handling, and telephony integration.
+**Technologies:** Python, FastAPI, WebSockets, Faster-Whisper, Silero VAD, Edge-TTS, NVIDIA API, HTML5, JavaScript
+
+Built a production-oriented, low-latency conversational AI voice agent that enables natural, real-time voice interactions through a fully streaming speech pipeline. The system integrates voice activity detection, speech recognition, large language models, and text-to-speech synthesis into an asynchronous architecture capable of full-duplex conversations with interruption handling.
+
+Designed with a modular architecture, each component of the AI pipeline operates independently, allowing speech recognition, language models, or speech synthesis providers to be replaced without affecting the overall system. The application exposes a WebSocket-based API suitable for deployment in customer support, virtual assistants, and voice-enabled AI applications.
 
 **Highlights**
 
-* Low-latency voice interactions (sub‑500ms)
-* Real-time speech-to-text and text-to-speech
-* Tool-calling support
-* Telephone integration through Twilio (live demo number: +1 (862) 777-8890)
+* Real-time bidirectional voice streaming using asynchronous WebSockets
+* Full-duplex conversations with user interruption (barge-in) support
+* Low-latency speech pipeline powered by Silero VAD, Faster-Whisper, NVIDIA LLM APIs, and Edge-TTS
+* Modular architecture enabling independent replacement of VAD, STT, LLM, and TTS components
+* Event-driven backend built with FastAPI and Python's asynchronous programming model
+* Browser-based frontend using the HTML5 Web Audio API for microphone capture and streamed audio playback
+* Cloudflare Tunnel deployment for secure public WebSocket access without exposing the host network
 
-**Repository:** [github.com/AdityaInamdar334](https://github.com/AdityaInamdar334)
+**Live Demo:** `wss://bureau-render-lightweight-quoted.trycloudflare.com/ws`
+
+**Repository:** https://github.com/AdityaInamdar334/Bistro-AI-Voice-Agent
+
 
 ---
 
