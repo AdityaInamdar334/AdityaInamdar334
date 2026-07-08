@@ -91,7 +91,6 @@ Built a retrieval-augmented research assistant capable of answering questions fr
 **Live Demo:** [nexus-graph-prz0b82qs-adityainamdar334s-projects.vercel.app](https://nexus-graph-prz0b82qs-adityainamdar334s-projects.vercel.app/)  
 **Repository:** [github.com/AdityaInamdar334/Nexus-Graph-RAG](https://github.com/AdityaInamdar334/Nexus-Graph-RAG)
 
----
 
 ---
 
@@ -113,7 +112,7 @@ Designed with a modular architecture, each component of the AI pipeline operates
 * Browser-based frontend using the HTML5 Web Audio API for microphone capture and streamed audio playback
 * Cloudflare Tunnel deployment for secure public WebSocket access without exposing the host network
 
-**Live Demo:** `wss://bureau-render-lightweight-quoted.trycloudflare.com/ws`
+**Live Demo:** https://bureau-render-lightweight-quoted.trycloudflare.com
 
 **Repository:** https://github.com/AdityaInamdar334/Bistro-AI-Voice-Agent
 
